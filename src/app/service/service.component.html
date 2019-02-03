@@ -1,0 +1,5 @@
+<input type="text" (input)="getDetails()">
+<button class="btn btn-info" (click)="onDisplayBtn()">{{ displayBtn }}</button>
+<p> {{ details }} </p>
+
+<p [ngStyle]="{backgroundColor: getColor(item)}" *ngFor="let item of list">The new item added is {{ item }}</p>
